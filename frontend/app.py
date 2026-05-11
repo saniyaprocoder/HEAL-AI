@@ -23,3 +23,11 @@ st.markdown("---")
 st.info(
     "AI-powered emergency healthcare assistance system."
 )
+st.markdown("---")
+
+st.subheader("📱 Scan QR for Emergency Access")
+
+st.image(
+    "assets/heal_ai_qr.png",
+    width=250
+)

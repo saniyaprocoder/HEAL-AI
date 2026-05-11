@@ -1,14 +1,20 @@
 import streamlit as st
 
 st.title("🐄 Animal Healthcare Module")
+st.sidebar.header("Veterinary Emergency Help")
 
+st.sidebar.info(
+    "Upload symptoms and wound images for better emergency support."
+)
 st.write("Enter animal emergency details.")
 
 st.markdown("---")
 
 # Animal Details
 animal_name = st.text_input("Animal Name")
-
+owner_name = st.text_input(
+    "Owner Name"
+)
 animal_type = st.selectbox(
     "Animal Type",
     ["Cow", "Dog", "Goat", "Buffalo", "Other"]

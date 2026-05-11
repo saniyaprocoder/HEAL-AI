@@ -4,7 +4,11 @@ import joblib
 model = joblib.load("C:\\Users\\syeed\\OneDrive\\Desktop\\HEAL-AI\\models\\heart_model.pkl")
 
 st.title("👨 Human Healthcare Module")
+st.sidebar.header("Human Emergency Help")
 
+st.sidebar.info(
+    "Provide correct patient details for accurate emergency analysis."
+)
 st.write("Enter patient emergency details.")
 
 st.markdown("---")
@@ -22,7 +26,9 @@ gender = st.selectbox(
     "Gender",
     ["Male", "Female", "Other"]
 )
-
+location = st.text_input(
+    "Patient Location"
+)
 # Vital Signs
 temperature = st.number_input(
     "Body Temperature (°C)",
