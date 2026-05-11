@@ -47,7 +47,9 @@ activity = st.selectbox(
 symptoms = st.text_area(
     "Enter Symptoms"
 )
+if st.button("🎤 Speak Animal Symptoms"):
 
+    st.info("Voice recognition feature coming soon")
 # Upload Image
 image = st.file_uploader(
     "Upload Wound/Image",

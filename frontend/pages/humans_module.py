@@ -52,7 +52,9 @@ pulse = st.number_input(
 symptoms = st.text_area(
     "Enter Symptoms"
 )
+if st.button("🎤 Speak Symptoms"):
 
+    st.info("Voice recognition feature coming soon")
 # Upload Reports
 report = st.file_uploader(
     "Upload Medical Report",

@@ -31,3 +31,6 @@ st.image(
     "assets/heal_ai_qr.png",
     width=250
 )
+st.markdown("---")
+
+st.success("✔ HEAL-AI Emergency System Active")
